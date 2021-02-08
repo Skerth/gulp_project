@@ -4,8 +4,7 @@ const gulp   = require('gulp'),
       rename = require("gulp-rename");
 
 const corejs = [
-    'node_modules/jquery/dist/jquery.min.js',
-    'node_modules/slick-carousel/slick/slick.min.js'
+    'node_modules/jquery/dist/jquery.min.js'
 ];
 
 const projectjs = [
