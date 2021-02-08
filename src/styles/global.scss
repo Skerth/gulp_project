@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: $gray-100;
+    font-family: $font-family-sans-serif;
+    font-size: $font-size;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+    color: $black;
+}
+
+h1, .h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: $font-weight-700;
+    line-height: 30px;
+}
+
+h2, .h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: $font-weight-700;   line-height: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+
+    &:hover {
+        color: $primary-lighten;
+    }
+}
+
+b {
+    font-weight: $font-weight-700;
+}
+
+input, button, textarea {
+    outline: none;
+
+    font-family: $font-family-sans-serif;
+    font-size: $font-size;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+    color: $gray-900;
+}
+
+.block {
+    @extend .container;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &-gray {
+        background: $gray-100;
+    }
+
+    &-title {
+        margin-bottom: 33px;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 25px;
+    }
+
+    &-desc {
+        margin-top: -25px;
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+.main-wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: $container-max-widths;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background: $white;
+    box-shadow: 0 0 10px -5px rgba(0,0,0,.5);
+}
+
+.main {
+    //flex: 1 0 auto;
+}

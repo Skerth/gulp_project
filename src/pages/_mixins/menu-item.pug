@@ -1,0 +1,10 @@
+mixin menu-item(anchor, url="#")
+    - var item_class = attributes.class + "__item";
+
+    if attributes.expanded
+        - item_class+= ' _expanded';
+
+    li(class=item_class)
+        a(class!=attributes.class + "__link", href=url)= anchor
+
+        block

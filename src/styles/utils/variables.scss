@@ -1,0 +1,35 @@
+// Color system
+$white:    #ffffff !default;
+$gray-100: #f7f7f8 !default;
+$gray-200: #dddddd !default;
+$gray-300: #a4aeb6 !default;
+$gray-300: #9c9fa1 !default;
+$gray-500: #5e6366 !default;
+$gray-700: #2d3337 !default;
+$gray-900: #080f14 !default;
+$black:    #000000 !default;
+
+$primary:          #f03226 !default;
+$primary-lighten:  #f25147 !default;
+$secondary:        #3f5263 !default;
+$secondary-darken: #1d3448 !default;
+
+// Grid containers
+$container-max-widths: 320px !default;
+
+// Components
+$window-padding: 10px !default;
+
+// Typography
+$font-size: 16px !default;
+
+$font-family-sans-serif:  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-weight-100: 100 !default;
+$font-weight-300: 300 !default;
+$font-weight-700: 700 !default;
+
+$font-weight-base: $font-weight-300 !default;
+
+$line-height-base: 1.48 !default;

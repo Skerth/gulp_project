@@ -1,0 +1,2 @@
+- `npm run start` - вместо `gulp`
+- `npm run build` - вместо `gulp build`

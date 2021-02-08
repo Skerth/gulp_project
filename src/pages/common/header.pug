@@ -1,0 +1,11 @@
+include ../_mixins/menu-item
+
+header.header
+  ul.header-menu
+    +menu-item("Пункт меню")(class="header-menu", expanded=true)
+      ul
+        +menu-item("Компакт")(class="header-menu")
+        +menu-item("Компакт")(class="header-menu")
+        +menu-item("Компакт")(class="header-menu")
+        +menu-item("Компакт")(class="header-menu")
+        +menu-item("Компакт")(class="header-menu")

@@ -1,0 +1,80 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $container-max-widths;
+  padding-left: $window-padding;
+  padding-right: $window-padding;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -$window-padding;
+  margin-left: -$window-padding;
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  border-radius: 3px;
+  padding: 12px 30px 11px;
+  background: $gray-200;
+  font-size: 14px;
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-300;
+  color: $black;
+  cursor: pointer;
+
+  &:hover {
+    background: $gray-300;
+  }
+
+  &-small {
+    padding: 7px 20px 6px;
+    font-size: 12px;
+  }
+
+  &-primary {
+    background: $primary;
+    color: $white;
+
+    &:hover {
+      background: $primary-lighten;
+      color: $white;
+    }
+
+    &__shadow {
+      box-shadow: 0 10px 20px 0 rgba(lighten($primary, 5%), .5);
+    }
+  }
+
+  &-light {
+    background: $white;
+    color: $gray-900;
+
+    &:hover {
+      background: darken($gray-100, 4%);
+    }
+  }
+
+  &-dark {
+    background: $gray-900;
+    color: $white;
+
+    &:hover {
+      background: $secondary-darken;
+    }
+  }
+
+  &-transparent {
+    background: transparent;
+    color: $primary;
+    text-decoration: underline;
+
+    &:hover {
+      background: transparent;
+      color: $primary-lighten;
+    }
+  }
+}
